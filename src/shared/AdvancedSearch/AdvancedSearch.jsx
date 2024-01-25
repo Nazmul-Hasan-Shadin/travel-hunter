@@ -5,16 +5,16 @@ import PrimaryButton from "../../component/PrimaryButton/PrimaryButton";
 import { MdOutlineLocationOn } from "react-icons/md";
 const AdvancedSearch = () => {
   return (
-    <div className="   mt-16 lg:mx-auto text-white  p-6 sm:bg-for-form background-search  lg:w-[64%]  lg:h-[278px]  ">
-      <div className="grid  grid-cols-1 lg:grid-cols-3  relative     ">
+    <div className="   mt-16 lg:mx-auto text-white  lg:p-6 background-search  lg:w-[64%]  lg:h-[278px]  ">
+      <div className="grid  grid-cols-1 lg:grid-cols-3  sm:bg-for-form  relative     ">
        <div> <span className="w-fit ">CHOOSE CATEGORY</span></div>
      <div className="">
-     <Tabs>
+     <Tabs className={''}>
           
           <div className="  -translate-y-24 lg:translate-y-0 ">
           <TabList
               className={
-                "flex gap-2  bg-[#fff] w-[359px]  mb-4 text-white font-medium p-[1px] -translate-y-0  "
+                "flex gap-2  bg-[#fff] w-[359px]   mb-4 text-white font-medium p-[1px]  lg:-translate-x-16  "
               }
             >
               <Tab className={"bg-[#008080] px-[23px] py-2 rounded-[5px]"}>
@@ -127,10 +127,10 @@ const AdvancedSearch = () => {
 
               
                   <div className="flex gap-2 pt-7">
-                  <button onClick={onclick}  className='btn bg-[#008080] hover:bg-green-600 btn-md z-10 px-10 py-3 w-[153px]  text-white btn-outline'>Book Now</button> 
+                  <button onClick={onclick}  className='btn bg-[#008080] hover:bg-green-600 btn-md z-10 px-10 py-3  text-white btn-outline'>Book Now</button> 
      
 
-                  <button onClick={onclick}  className='btn bg-[#008080] hover:bg-green-600 btn-md z-10 px-0 py-3 w-[153px]  text-white btn-outline'>Search Now</button> 
+                  <button onClick={onclick}  className='btn bg-[#008080] hover:bg-green-600 btn-md z-10 px-0 py-3 w-[95px]  text-white btn-outline'>Search Now</button> 
                    
                     
                   </div>

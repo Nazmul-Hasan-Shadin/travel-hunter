@@ -2,11 +2,13 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/images/brand/logo.png'
 import { IoIosSearch } from "react-icons/io";
 import { FaEarthAsia } from "react-icons/fa6";
+import { MdKeyboardArrowDown } from "react-icons/md";
 import './Navbar.css'
+import PrimaryButton from '../../component/PrimaryButton/PrimaryButton';
 const Navbar = () => {
      const links=<>
          <li> <Link to={'/'}>Home</Link> </li>
-    <li> <Link to={''}>services</Link> </li>
+    <li> <Link to={''}>services  <MdKeyboardArrowDown/> </Link> </li>
     <li> <Link to={''}>My Bookings</Link> </li>
     <li> <Link>package & offer</Link> </li>
     <li> <Link>Blog</Link> </li>
@@ -15,9 +17,10 @@ const Navbar = () => {
 
      </>
     return (
-  <div className=''>
-            <div  className="navbar relative    mx-auto w-[86%]  background-navbar ">
-           <div className='absolute inset-0  np '>
+  <div className='relative  mx-auto w-[86%]'>
+            <div  className="navbar  background-nav text-white ">
+           <div  className='absolute top-0 inset-0    '>
+
            <svg xmlns="http://www.w3.org/2000/svg" width="1682" height="98" viewBox="0 0 1682 98" fill="none">
   <g opacity="0.97" filter="url(#filter0_bdddddddd_100_899)">
     <path d="M11 27C11 15.9543 19.9543 7 31 7H1651C1662.05 7 1671 15.9543 1671 27V63C1671 74.0457 1662.05 83 1651 83H31C19.9543 83 11 74.0457 11 63V27Z" fill="url(#paint0_linear_100_899)" fill-opacity="0.7" shape-rendering="crispEdges"/>
@@ -96,20 +99,20 @@ const Navbar = () => {
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">
-            <img className='w-[100px] h-[65px]' src={logo} alt="" />
+            <img className='w-[60px] ' src={logo} alt="" />
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+        <div className="navbar-center hidden lg:flex ">
+          <ul className="menu pr-7  menu-horizontal px-1">
             {links}
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end space-x-3  ">
      
-        <IoIosSearch />
-        <FaEarthAsia/>
-          <button className='btn btn-outline'>Sign Up</button>
-          <button  className='btn w-[111px] bg-[#008080] rounded-[50px] px-9 py-2 text-white btn-outline'>Login</button>
+        <IoIosSearch className='text-3xl text-white' />
+        <FaEarthAsia className='text-3xl'/>
+          <button className='btn btn-outline z-10  text-white '>Sign Up</button>
+         <PrimaryButton  text={'Log In'}></PrimaryButton>
         </div>
       </div>
   </div>

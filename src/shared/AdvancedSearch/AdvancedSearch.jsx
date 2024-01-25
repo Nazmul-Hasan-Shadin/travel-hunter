@@ -5,7 +5,7 @@ import PrimaryButton from "../../component/PrimaryButton/PrimaryButton";
 import { MdOutlineLocationOn } from "react-icons/md";
 const AdvancedSearch = () => {
   return (
-    <div className="   mt-16 lg:mx-auto text-white  lg:p-6 background-search  lg:w-[64%]  lg:h-[278px]  ">
+    <div className=" relative  mt-16 lg:mx-auto text-white  lg:p-6 background-search  lg:w-[64%]  lg:h-[278px]  ">
       <div className="grid  grid-cols-1 lg:grid-cols-3  sm:bg-for-form  relative     ">
        <div> <span className="w-fit ">CHOOSE CATEGORY</span></div>
      <div className="">

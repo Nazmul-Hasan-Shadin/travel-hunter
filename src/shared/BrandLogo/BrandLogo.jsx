@@ -5,7 +5,7 @@ import brandlogo4 from "../../assets/images/brand/logo1.svg"
 import brandlogo5 from "../../assets/images/brand/Walmart Logo.svg"
 const BrandLogo = () => {
     return (
-        <div className="bg-[#008080] ">
+        <div className=" hidden lg:block bg-[#008080] ">
             <div className="flex gap-20 justify-center py-9 ">
                 <img src={brandlogo1} alt="" />
                 <img src={brandlogo2} alt="" />

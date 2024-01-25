@@ -3,7 +3,7 @@ import PrimaryButton from "../../component/PrimaryButton/PrimaryButton";
 
 const HeaderText = () => {
     return (
-        <div className="w-full lg:w-[64%]   text-white space-y-3 pt-14 mt-[37%]  lg:pl-[184px]  bg-[#101010] lg:bg-opacity-0 lg:mt-0 " >
+        <div className="w-full relative lg:w-[64%]   text-white space-y-3 pt-14 mt-[37%]  lg:pl-[184px]  bg-[#101010] lg:bg-opacity-0 lg:mt-0 h-[400px] " >
         <h1 className=" text-3xl lg:text-6xl p-4 lg:p-0"> Start your <span className="text-[#00C9C9]"> unforgettable </span>
 <br />journey with us. </h1> 
 <p className=" text-sm p-4 lg:text-2xl lg:p-0">The best travel for your jouney begins now</p>

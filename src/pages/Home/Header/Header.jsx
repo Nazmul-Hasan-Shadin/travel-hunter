@@ -1,11 +1,15 @@
 import React from 'react';
 import Navbar from '../../../shared/Navbar/Navbar';
 import  headerImage from '../../../assets/images/Banner/carBanner.png'
+import HeaderText from '../../../shared/HeaderText/HeaderText';
+import AdvancedSearch from '../../../shared/AdvancedSearch/AdvancedSearch';
 
 const Header = () => {
     return (
         <div className="h-[90vh]" style={{backgroundImage:"url('/src/assets/images/Banner/carBanner.png')"}}>
             <Navbar></Navbar>
+            <HeaderText></HeaderText>
+            <AdvancedSearch></AdvancedSearch>
         </div>
     );
 };

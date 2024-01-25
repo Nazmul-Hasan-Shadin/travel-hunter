@@ -6,7 +6,7 @@ import AdvancedSearch from '../../../shared/AdvancedSearch/AdvancedSearch';
 
 const Header = () => {
     return (
-        <div className="h-" style={{backgroundImage:"url('/src/assets/images/Banner/carBanner.png')"}}>
+        <div className=" bg-center bg-cover  bg-no-repeat w-[412px] h-[216px] lg:w-full lg:h-full" style={{backgroundImage:"url('/src/assets/images/Banner/carBanner.png')"}}>
             <Navbar></Navbar>
             <HeaderText></HeaderText>
             <AdvancedSearch></AdvancedSearch>

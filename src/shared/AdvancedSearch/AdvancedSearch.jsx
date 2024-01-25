@@ -5,20 +5,21 @@ import PrimaryButton from "../../component/PrimaryButton/PrimaryButton";
 import { MdOutlineLocationOn } from "react-icons/md";
 const AdvancedSearch = () => {
   return (
-    <div className="w-[64%] h-[278px]  mt-16 mx-auto text-white background-search ">
-      <div className="flex  gap-12  relative p-6 ">
-        <span className="text-sm ">CHOOSE CATEGORY</span>
-
-        <div className="">
-          <Tabs>
-            <TabList
+    <div className="   mt-16 lg:mx-auto text-white  p-6 sm:bg-for-form background-search  lg:w-[64%]  lg:h-[278px]  ">
+      <div className="grid  grid-cols-1 lg:grid-cols-3  relative     ">
+       <div> <span className="w-fit ">CHOOSE CATEGORY</span></div>
+     <div className="">
+     <Tabs>
+          
+          <div className="  -translate-y-24 lg:translate-y-0 ">
+          <TabList
               className={
-                "flex gap-8 bg-[#fff] mb-4 text-white font-medium p-[1px]"
+                "flex gap-2  bg-[#fff] w-[359px]  mb-4 text-white font-medium p-[1px] -translate-y-0  "
               }
             >
               <Tab className={"bg-[#008080] px-[23px] py-2 rounded-[5px]"}>
                 {" "}
-                Car
+               car
               </Tab>
               <Tab className={"bg-[#008080] px-[23px] py-2 rounded-[5px]"}>
                 Flight
@@ -30,18 +31,22 @@ const AdvancedSearch = () => {
                 Boat
               </Tab>
             </TabList>
+          </div>
+    
 
-            <div>
+            <div className="" >
               <TabPanel className={"flex justify-center"}>
-                <div className="w-full absolute left-0 p-3">
-                  <div className=" flex gap-4 space-y-2">
+                <div className="w-full lg:absolute  left-0 p-3">
+
+                    {/* div one */}
+                  <div className=" grid grid-cols-2 gap-4 space-y-2 lg:grid-cols-3 ">
                     <div className="relative">
-                       <span className="mb-2 inline-block">From</span>
+                       <span className="mb-4 inline-block">From</span>
                     <input
                      
                       type="text"
                       placeholder="Your loacation"
-                      className="input input-bordered w-full px-10 max-w-xs "
+                      className="input input-bordered w-full text-black px-10 max-w-xs "
                     />
                         <MdOutlineLocationOn className="absolute text-xl text-black top-2/4 left-4"/>
                     </div>
@@ -54,34 +59,37 @@ const AdvancedSearch = () => {
                      
                       type="text"
                       placeholder="Your loacation"
-                      className="input input-bordered w-full px-10 max-w-xs "
+                      className="input  text-black  input-bordered w-full px-10 max-w-xs "
                     />
                         <MdOutlineLocationOn className="absolute text-xl text-black top-2/4 left-4"/>
                     </div>
 
-                                  <div className="relative">
+                                  <div className="relative col-span-2 lg:col-span-1">
                        <span className="mb-2 inline-block">Choose Your Car</span>
                     <input
                      
                       type="text"
                       placeholder="Your loacation"
-                      className="input input-bordered w-full px-10 max-w-xs "
+                      className="input  text-black  input-bordered  w-full md:px-10  "
                     />
                         <MdOutlineLocationOn className="absolute text-xl text-black top-2/4 left-4"/>
                     </div>
+
+
+
 
                   </div>
 
                   {/*======== 2nd  div========= */}
 
-                  <div className="flex items-center  gap-3">
+                  <div className="grid grid-cols-2 lg:grid-cols-6  gap-3">
                    
                 <div>
                <span className="block "> No of Luggage</span>
                 <input
                       type="text"
                       placeholder="Type here"
-                      className="input input-bordered w-full max-w-xs"
+                      className="input  text-black  input-bordered w-full max-w-xs"
                     />
                 </div>
 
@@ -90,24 +98,24 @@ const AdvancedSearch = () => {
                 <input
                       type="text"
                       placeholder="Type here"
-                      className="input input-bordered w-full max-w-xs"
+                      className="input  text-black  input-bordered w-full max-w-xs"
                     />
                 </div>
 
 
-                <div>
+                <div className="">
                <span className="block "> Passenger</span>
                 <input
                       type="text"
                       placeholder="Type here"
-                      className="input input-bordered w-full max-w-xs"
+                      className="input  text-black  input-bordered w-full max-w-xs"
                     />
                 </div>
 
 
                    <div>
                     <span className="block "> Passenger</span>
-                   <select className="select select-bordered w-full max-w-xs">
+                   <select className="select select-bordered text-black w-full max-w-xs">
                       <option disabled selected>
                         Who shot first?
                       </option>
@@ -128,6 +136,8 @@ const AdvancedSearch = () => {
                   </div>
                   </div>
                 </div>
+
+
               </TabPanel>
               <TabPanel>
                 <h2>Any content 2</h2>
@@ -141,12 +151,11 @@ const AdvancedSearch = () => {
               </TabPanel>
             </div>
           </Tabs>
-        </div>
-
+     </div>
         {/*  raido butoon */}
-        <div className="flex gap-7 w-full  ">
+        <div className="flex flex-col gap-1   pl-12 lg:flex-row  ">
           <div className="form-control">
-            <label className="label p-0 cursor-pointer">
+            <label className="label  cursor-pointer">
               <span className="label-text  text-white">One way</span>
               <input
                 type="radio"

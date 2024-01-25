@@ -8,16 +8,18 @@ import tripslider3 from '../../assets/images/trip/hotel.png'
 import tripslider4 from '../../assets/images/trip/ship.png'
 import { FreeMode, Pagination } from 'swiper/modules';
 import PrimaryHeader from '../PrimaryHeader/PrimaryHeader';
-
+import './TripDeal.css'
 const TreapDeal = () => {
     return (
-        <div className='relative'>
-            <PrimaryHeader 
+        <div className='relative bg-[#101010] partial-background'>
+      <div className='w-[]'>
+      <PrimaryHeader 
             heading={'BEST TRIPS'} 
             styleText={'DEALS'}
             text={'Ready to travel the globe? Discovering new places and  activities is simple with our flight booking service.'}
             
             ></PrimaryHeader>
+      </div>
 
             <div className='lg:p-[7.5%]'>
             <Swiper

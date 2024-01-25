@@ -6,10 +6,22 @@
 .partial-background::after{
     content: 'hfdhdfj';
     position: absolute;
-    color: red;
+    
     height: 469px;
     top: 0;
     right: 0;
+    width: 19%;
+
+    background: #008080;
+    filter: blur(105px);
+}
+.partial-background-categories{
+    content: 'hfdhdfj';
+    position: absolute;
+ 
+    height: 469px;
+    top: 0;
+    left: 0;
     width: 19%;
 
     background: #008080;

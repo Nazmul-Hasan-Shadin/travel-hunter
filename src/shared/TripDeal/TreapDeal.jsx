@@ -11,7 +11,7 @@ import PrimaryHeader from '../PrimaryHeader/PrimaryHeader';
 import './TripDeal.css'
 const TreapDeal = () => {
     return (
-        <div className='relative bg-[#101010] partial-background'>
+        <div className='relative bg-[#101010] -z-10 partial-background'>
       <div className='w-[]'>
       <PrimaryHeader 
             heading={'BEST TRIPS'} 

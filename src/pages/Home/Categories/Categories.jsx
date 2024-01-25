@@ -1,22 +1,23 @@
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import PrimaryHeader from "../../../shared/PrimaryHeader/PrimaryHeader";
-import 'react-tabs/style/react-tabs.css';
+import { MdKeyboardArrowDown } from "react-icons/md";
+
 
 
 const Categories = () => {
     return (
-        <div>
+        <div className="bg-[#101010] ">
             <PrimaryHeader heading={'ALL'} styleText={'CATEGORIES'} text={'Ready to travel the globe? Discovering new places and activities is simple with our flight booking service.'}></PrimaryHeader>
             
             {/* ==============categories============================= */}
 
             <Tabs>
- <div className="bg-white">
+ <div className="">
 
- <TabList className={'w-[29%] mx-auto bg-white'} >
-      <Tab><button className="btn bg-[#00C9C9]">Car</button></Tab>
-     <Tab><button className="btn bg-[#00C9C9]">Flight</button></Tab>
-       <Tab><button className="btn bg-[#00C9C9]">Hotel</button></Tab>
+ <TabList className={' flex gap-12 w-[29%] lg:px-12 bg-white   mx-auto'} >
+      <Tab className="flex "><button className="btn   bg-transparent  hover:bg-[#00C9C9] active:bg-[#00c9c9]  text-black hover:text-white active:text-white">Flight  <MdKeyboardArrowDown className="text-xl"/> </button></Tab>
+     <Tab className={'flex'}><button className="btn flex  bg-transparent  hover:bg-[#00C9C9] active:bg-[#00c9c9]  text-black hover:text-white active:text-white">Flight <MdKeyboardArrowDown className="text-xl"/> </button></Tab>
+       <Tab className={'flex'}><button className="btn   bg-transparent  hover:bg-[#00C9C9] active:bg-[#00c9c9]  text-black hover:text-white active:text-white">Flight <MdKeyboardArrowDown className="text-xl"/> </button></Tab>
     </TabList>
  </div>
 

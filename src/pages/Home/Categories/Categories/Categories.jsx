@@ -4,6 +4,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import CategoryTab from "../CategoriesTab/CategoryTab";
+import './Categories.css'
 
 
 
@@ -16,11 +17,11 @@ const Categories = () => {
        },[])
 
     const car=serviceData?.filter((car)=>car.category ==='car')
-    console.log(car)
+
 
 
     return (
-        <div className="bg-[#101010] ">
+        <div className="bg-[#101010] h-[100%] partial-background-categories ">
             <PrimaryHeader heading={'ALL'} styleText={'CATEGORIES'} text={'Ready to travel the globe? Discovering new places and activities is simple with our flight booking service.'}></PrimaryHeader>
             
             {/* ==============categories============================= */}

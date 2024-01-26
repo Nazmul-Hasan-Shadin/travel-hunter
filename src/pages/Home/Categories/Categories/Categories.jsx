@@ -21,13 +21,13 @@ const Categories = () => {
 
 
     return (
-        <div className="bg-[#101010] h-[100%] partial-background-categories ">
+        <div className="bg-[#101010]  partial-background-categories ">
             <PrimaryHeader heading={'ALL'} styleText={'CATEGORIES'} text={'Ready to travel the globe? Discovering new places and activities is simple with our flight booking service.'}></PrimaryHeader>
             
             {/* ==============categories============================= */}
 
             <Tabs>
- <div className="">
+ <div className="h-full">
 
  <TabList className={' flex gap-12 w-[29%] lg:px-12 bg-white   mx-auto'} >
       <Tab className="flex "><button className="btn   bg-transparent  hover:bg-[#00C9C9] active:bg-[#00c9c9]  text-black hover:text-white active:text-white">Flight  <MdKeyboardArrowDown className="text-xl"/> </button></Tab>

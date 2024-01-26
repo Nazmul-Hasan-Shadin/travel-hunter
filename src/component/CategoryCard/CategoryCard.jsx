@@ -4,7 +4,7 @@ import { IoBagCheckOutline } from "react-icons/io5";
 const CategoryCard = ({category}) => {
    const{image,passenger_number,bags_number,star,description,car_name,wifi,mobile_charger,bluetooth,drink_include,price,category:categoryProduct}= category
     return (
-        <div className="lg:mt-36 h-[286px]">
+        <div className="lg:mt-36 ">
          <div className="card card-compact  bg-base-100 shadow-xl">
   <figure>
     <img className="h-[215.17px] w-full " src={image} alt="Shoes" />

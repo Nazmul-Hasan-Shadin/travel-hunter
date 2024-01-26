@@ -3,7 +3,7 @@ import Navbar from '../../../shared/Navbar/Navbar';
 import Header from '../Header/Header';
 import BrandLogo from '../../../shared/BrandLogo/BrandLogo';
 import TreapDeal from '../../../shared/TripDeal/TreapDeal';
-import Categories from '../Categories/Categories';
+import Categories from '../Categories/Categories/Categories';
 
 const Home = () => {
     return (

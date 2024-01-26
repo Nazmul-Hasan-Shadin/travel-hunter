@@ -1,10 +1,24 @@
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
-import PrimaryHeader from "../../../shared/PrimaryHeader/PrimaryHeader";
+import PrimaryHeader from "../../../../shared/PrimaryHeader/PrimaryHeader";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import CategoryTab from "../CategoriesTab/CategoryTab";
 
 
 
 const Categories = () => {
+    const [serviceData,setServiceData]=useState([])
+
+       useEffect(()=>{
+          axios.get('/carData.json')
+          .then(data=> setServiceData(data.data))
+       },[])
+
+    const car=serviceData?.filter((car)=>car.category ==='car')
+    console.log(car)
+
+
     return (
         <div className="bg-[#101010] ">
             <PrimaryHeader heading={'ALL'} styleText={'CATEGORIES'} text={'Ready to travel the globe? Discovering new places and activities is simple with our flight booking service.'}></PrimaryHeader>
@@ -23,7 +37,7 @@ const Categories = () => {
 
 
     <TabPanel>
-      <h2>Any content 1</h2>
+       <CategoryTab category={car}></CategoryTab>
     </TabPanel>
     <TabPanel>
       <h2>Any content 2</h2>
